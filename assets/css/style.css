@@ -1,0 +1,11 @@
+body {
+	margin: 0;
+	overflow: hidden;
+	background-color: black;
+}
+
+#wrapper {
+	padding: 0;
+	margin: 0 auto;
+	display: block;
+}
