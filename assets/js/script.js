@@ -39,7 +39,7 @@ setSize();
 const start = async () => {
   // load the font
   const fg = new V4.FontGroup();
-  await fg.loadFont("/assets/fonts/antiqua.ttf", "Black");
+  await fg.loadFont("/assets/fonts/ant.ttf", "Black");
 
   // background logo renderer
   const logoRenderer = (state) => {
