@@ -90,22 +90,22 @@ const start = async () => {
   }
 
   // set the textbox and canvas colors to be a random blue shade
-  const randomBlue = () => {
-    const blue = Math.floor(Math.random() * 100) + 75;
-    tb.options({ backgroundColor: `rgb(50, 75, ${blue})` });
-    loop.opts.backgroundColor = `rgb(50, 75, ${255 - blue})`;
-  };
+  // const randomBlue = () => {
+  //   const blue = Math.floor(Math.random() * 100) + 75;
+  //   tb.options({ backgroundColor: `rgb(50, 75, ${blue})` });
+  //   loop.opts.backgroundColor = `rgb(50, 75, ${255 - blue})`;
+  // };
 
   // the renderer to bounce the textbox around the canvas
   const bounceRenderer = (state) => {
     if (x + bw >= w || x <= 0) {
       xMag *= -1;
       x += 5 * Math.sign(xMag); // give it a little boost to prevent sticking to side
-      randomBlue();
+      //   randomBlue();
     } else if (y >= h || y <= bh) {
       yMag *= -1;
       y += 5 * Math.sign(yMag);
-      randomBlue();
+      //   randomBlue();
     }
     x += xMag * state.deltaTime;
     y += yMag * state.deltaTime;
